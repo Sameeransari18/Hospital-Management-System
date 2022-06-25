@@ -1,0 +1,11 @@
+//Create Database
+create database hms;
+
+//Create user table
+create table user(name varchar(50), email varchar(100) primary key, password varchar(100), securityQuestion varchar(200), answer varchar(100), address varchar(100));
+
+//Create patient table
+create table patient(patientID varchar(10)primary key,name varchar(100),contactNumber varchar(10),age varchar(3),gender varchar(10),bloodGroup varchar(20),address varchar(100),anyMajorDisease varchar(500));
+
+//Create patient report table
+create table patientReport(patientID varchar(10)primary key,sympton varchar(200),diagnosis varchar(200),medicine varchar(200),wardReq varchar(5),typeWard varchar(10));
